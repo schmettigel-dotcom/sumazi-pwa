@@ -1,0 +1,24 @@
+{
+  "name": "SuMaZi FoodWorld",
+  "short_name": "SuMaZi",
+  "description": "SuMaZi FoodWorld – Ordner-Manager",
+  "start_url": "https://script.google.com/macros/s/AKfycbyek8rclhimPQgs4f__KieB86-bxoojWPAZ2LqMgatdb599KOZrri2Pdj0V4M8QCZSj/exec",
+  "display": "standalone",
+  "background_color": "#3F4A35",
+  "theme_color": "#3F4A35",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
