@@ -7,6 +7,7 @@
   <title>SuMaZi FoodWorld</title>
 
   <link rel="manifest" href="./manifest.json">
+
   <meta name="theme-color" content="#3F4A35">
 
   <link rel="icon"
@@ -18,18 +19,97 @@
         sizes="192x192"
         href="./icon-192.png">
 
-  <!-- Sofort zum eigentlichen Manager weiterleiten -->
-  <meta http-equiv="refresh"
-        content="0;url=https://script.google.com/macros/s/AKfycbyK0N7QDh7tTkcu1EFtrT2u_RBUPeNu7EmVwZfPxscvgOp0L_RaY3jqSVxBcx3-HuQc/exec">
+  <style>
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #3F4A35;
+      font-family: Arial, sans-serif;
+    }
 
-  <script>
-    window.location.replace(
-      "https://script.google.com/macros/s/AKfycbyK0N7QDh7tTkcu1EFtrT2u_RBUPeNu7EmVwZfPxscvgOp0L_RaY3jqSVxBcx3-HuQc/exec"
-    );
-  </script>
+    .page {
+      min-height: 100vh;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      box-sizing: border-box;
+      background: white;
+      border-radius: 22px;
+      padding: 35px 28px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,.2);
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      display: block;
+      margin: 0 auto 25px;
+      border-radius: 22px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: #3F4A35;
+      font-size: 28px;
+    }
+
+    p {
+      margin: 0 0 25px;
+      color: #777;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      border-radius: 12px;
+      background: #3F4A35;
+      color: #F2E7C5;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
-  <p>SuMaZi FoodWorld wird geöffnet …</p>
+
+  <div class="page">
+
+    <div class="card">
+
+      <img
+        class="logo"
+        src="./icon-192.png"
+        alt="SuMaZi FoodWorld">
+
+      <h1>SuMaZi FoodWorld</h1>
+
+      <p>Ordner-Manager</p>
+
+      <button onclick="openManager()">
+        🍴 Manager öffnen
+      </button>
+
+    </div>
+
+  </div>
+
+  <script>
+    function openManager() {
+      window.location.href =
+        "https://script.google.com/macros/s/AKfycbyK0N7QDh7tTkcu1EFtrT2u_RBUPeNu7EmVwZfPxscvgOp0L_RaY3jqSVxBcx3-HuQc/exec";
+    }
+  </script>
+
 </body>
 </html>
